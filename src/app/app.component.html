@@ -1,12 +1,27 @@
-<h1>E-book-Store</h1>
 <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-<nav >
-  <ul>
-    <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
-    <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
-    <li><a routerLink="/register" routerLinkActive="active" ariaCurrentWhenActive="page">Register</a></li>
-  </ul>
-  
-</nav>
+<div class="">
+  <nav class="bg-blue-600 uppercase text-xl text-white h-12 rounded-md ">
+    <div class="flex">
+      <div class="mt-2 mb-2">
+        <h1 class="ml-5">E-book-Store</h1>
+
+        <ul class="flex absolute inset-y-0 right-[500px] w-16 gap-4 mt-2 mb-2">
+          <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+          <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
+          <li><a routerLink="/register" routerLinkActive="active" ariaCurrentWhenActive="page">Register</a></li>
+          <li><a routerLink="/Login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a></li>
+          <li><input type="search" placeholder="search here" class="rounded-md"></li>
+          <li><button type="submit" class="border-solid border-2 rounded-md">Search</button></li>
+        </ul>
+      </div>
+
+
+
+    </div>
+
+
+  </nav>
+</div>
+
 <!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>
